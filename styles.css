@@ -1,0 +1,160 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1E90FF; /* Azul médio */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #FFA500; /* Laranja para hover */
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Adicionei margem vertical para espaçar as seções */
+    background-color: #fff; /* Fundo branco para destacar a sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 5px; /* Bordas arredondadas para suavizar */
+}
+
+section h2 {
+    color: #1E90FF;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: square;
+    margin-left: 40px;
+}
+#form-contato {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#form-whatsapp label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1E90FF;
+}
+
+#form-whatsapp input,
+#form-whatsapp textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#form-whatsapp textarea {
+    resize: vertical;
+}
+
+#form-whatsapp button {
+    background-color: #25D366; /* Verde do WhatsApp */
+}
+
+#form-whatsapp button:hover {
+    background-color: #20BF55; /* Verde mais escuro */
+}
+
+/* Botão na seção "Como Ajudar" */
+button {
+    background-color: #FFA500; /* Laranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FF8C00; /* Laranja mais escuro */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
