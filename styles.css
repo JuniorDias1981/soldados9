@@ -1,11 +1,10 @@
-/* Reset básico para remover margens e padding padrão */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral do corpo */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,7 +13,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #1E90FF; /* Azul médio */
+    background-color: #1E90FF;
     color: white;
     text-align: center;
     padding: 20px;
@@ -30,6 +29,12 @@ header p {
     margin-bottom: 15px;
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os links quebrem linha em telas pequenas */
+}
+
 header nav a {
     color: white;
     text-decoration: none;
@@ -38,17 +43,17 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #FFA500; /* Laranja para hover */
+    color: #FFA500;
 }
 
 /* Seções */
 section {
     padding: 40px 20px;
     max-width: 800px;
-    margin: 20px auto; /* Adicionei margem vertical para espaçar as seções */
-    background-color: #fff; /* Fundo branco para destacar a sombra */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 5px; /* Bordas arredondadas para suavizar */
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 section h2 {
@@ -67,6 +72,25 @@ section ul {
     list-style-type: square;
     margin-left: 40px;
 }
+
+/* Botão */
+button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FF8C00;
+}
+
+/* Formulário */
 #form-contato {
     background-color: #f9f9f9;
     padding: 20px;
@@ -96,28 +120,11 @@ section ul {
 }
 
 #form-whatsapp button {
-    background-color: #25D366; /* Verde do WhatsApp */
+    background-color: #25D366;
 }
 
 #form-whatsapp button:hover {
-    background-color: #20BF55; /* Verde mais escuro */
-}
-
-/* Botão na seção "Como Ajudar" */
-button {
-    background-color: #FFA500; /* Laranja */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #FF8C00; /* Laranja mais escuro */
+    background-color: #20BF55;
 }
 
 /* Rodapé */
@@ -126,23 +133,48 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
 
-footer p {
-    font-size: 0.9em;
-}
-
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header h1 {
         font-size: 2em;
     }
 
     header p {
         font-size: 1em;
+    }
+
+    header nav {
+        flex-direction: column; /* Links em coluna em telas menores */
+    }
+
+    header nav a {
+        margin: 10px 0; /* Espaçamento vertical entre links */
+    }
+
+    section {
+        padding: 30px 15px;
+        margin: 15px auto;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section ul {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
     }
 
     section {
@@ -153,8 +185,17 @@ footer p {
         font-size: 1.5em;
     }
 
+    section p, section ul {
+        font-size: 1em;
+    }
+
     button {
         font-size: 1em;
         padding: 8px 15px;
+    }
+
+    #form-whatsapp input,
+    #form-whatsapp textarea {
+        font-size: 0.9em;
     }
 }
