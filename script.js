@@ -10,7 +10,7 @@ document.getElementById('form-whatsapp').addEventListener('submit', function(eve
 
     const nome = document.getElementById('nome').value;
     const mensagem = document.getElementById('mensagem').value;
-    const numeroWhatsapp = "5522997407901"; // Substitua pelo número real (com código do país e DDD, sem + ou espaços)
+    const numeroWhatsapp = "5522999138432"; // Substitua pelo número real (com código do país e DDD, sem + ou espaços)
 
     const texto = `Olá, Soldado 9! Meu nome é ${nome} e gostaria de ajudar. ${mensagem}`;
     const textoCodificado = encodeURIComponent(texto);
