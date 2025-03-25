@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Soldado 9 - Apoio à Vulnerabilidade Social</title>
+    <title>Soldados 9</title>
 </head>
 <body>
     <header>
@@ -24,7 +25,7 @@
     <section id="impacto">
         <h2>Nosso Impacto</h2>
         <ul>
-            <li>Apoio a famílias em situação de extrema pobreza.</li>
+            <li>Apoio a famílias em situação de necessidade e extrema pobreza.</li>
             <li>Encaminhamento para o mercado de trabalho.</li>
             <li>Distribuição de alimentos e itens essenciais.</li>
         </ul>
@@ -33,36 +34,42 @@
         <h2>Como Você Pode Ajudar</h2>
         <p>Junte-se a nós para fazer a diferença! Você pode:</p>
         <ul>
-            <li>Doar alimentos, roupas, rações ou recursos financeiros.</li>
+            <li>Doar alimentos, roupas ou recursos financeiros.</li>
+            <li>Material esportivo.</li>
             <li>Oferecer vagas de emprego ou cursos de capacitação.</li>
             <li>Ser um voluntário no projeto.</li>
         </ul>
+        <p>Se você deseja fazer doações para o Soldados 9 e ajudar quem mais precisa, é muito simples! Pode ser alimentos, roupas ou qualquer item que faça a diferença. Entre em contato conosco e nós vamos até o local marcado buscar a sua contribuição.<p>Juntos, podemos transformar vidas!</p>
         <button id="abrir-form">Quero Ajudar!</button>
-    
-        <!-- Formulário escondido inicialmente -->
         <div id="form-contato" style="display: none;">
             <form id="form-whatsapp">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-    
+                <input type="text" id="nome" name="nome">
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como você gostaria de ajudar?"></textarea>
-    
                 <button type="submit">Enviar via WhatsApp</button>
             </form>
         </div>
     </section>
     <section id="contato">
         <h2>Entre em Contato</h2>
-        <p>E-mail: contato@soldados9.org</p>
-        <p>Telefone: (XX) XXXX-XXXX</p>
-        <p>Redes Sociais: @Soldados9Oficial</p>
+        <div class="contato-info">
+            <p>Responsável: Junior</p>
+            <p><span class="icone">📞</span> Telefone 1: (22) 99913-8432</p>
+            <p><span class="icone">📞</span> Telefone 2: (22) 99923-7490</p>
+            <p>
+                <span class="icone"><i class="fab fa-instagram"></i></span> 
+                Nosso instagram: 
+                <a href="https://www.instagram.com/soldados9/" target="_blank">@soldados9</a>
+            </p>
+        </div>
     </section>
+    
 
     <script src="script.js"></script>
 
     <footer>
-        <p>&copy; 2025 Soldados 9 - Todos os direitos reservados</p>
+        <p>&copy; 2025 Projeto social - Soldados 9 - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
